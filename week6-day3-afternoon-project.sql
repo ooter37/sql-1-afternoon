@@ -22,7 +22,7 @@ ORDER BY height DESC;
 --4
 SELECT * FROM person
 ORDER BY height ASC;
---5 this is getting a bit repetitive
+--5
 SELECT * FROM person
 ORDER BY age DESC;
 --6
@@ -119,7 +119,7 @@ SELECT count(*) FROM invoice
 WHERE billing_country = 'USA';
 --2 I know I can use max() but I'm trying to spice things up a bit
 SELECT * FROM invoice ORDER BY total DESC LIMIT 1;
---3 this is the most boring technology by far
+--3
 SELECT * FROM invoice ORDER BY total ASC LIMIT 1;
 --4 
 SELECT * FROM invoice 
@@ -132,5 +132,5 @@ SELECT count(*) FROM invoice
 WHERE billing_state IN ('CA', 'TX', 'AZ');
 --7
 SELECT avg(total) FROM invoice;
---8 zzzzzzzzzzzzz
+--8
 SELECT sum(total) FROM invoice ;
